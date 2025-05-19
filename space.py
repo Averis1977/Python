@@ -37,10 +37,10 @@ laserImg = pygame.Surface((5, 20))
 laserImg.fill((255, 255, 0))
 laserX = 0
 laserY = 520
-laserY_change = 7  # langsamerer Laser
+laserY_change = 7  
 laser_state = "ready"
 
-# Score
+
 score = 0
 font = pygame.font.Font(None, 36)
 
@@ -63,7 +63,7 @@ def is_collision(enemyX, enemyY, laserX, laserY):
     distance = math.sqrt((enemyX - laserX) ** 2 + (enemyY - laserY) ** 2)
     return distance < 27
 
-# Game Loop
+
 running = True
 while running:
     screen.fill((0, 0, 50))  # Hintergrund dunkelblau
